@@ -5,11 +5,11 @@
 </figure>
 <nav>
 	<ul>
-		<li><a href="/">Home</a></li>
-		<li><a href="/tours">Tours</a></li>
-		<li><a href="/bar">Bar</a></li>
-		<li><a href="/blog">Blog</a></li>
-		<li><a href="/about">About us</a></li>
-		<li><a href="/contact">Contact us</a></li>
+		<li class="{% if page.title == "home" %} active {% else %} no-active {% endif %}"><a href="/">Home</a></li>
+		<li><a href="/tours.html">Tours</a></li>
+		<li><a href="/bar.html">Bar</a></li>
+		<li><a href="/blog.html">Blog</a></li>
+		<li class="{% if page.title == "about" %} active {% else %} no-active {% endif %}"><a href="/about.html">About us</a></li>
+		<li><a href="/contact.html">Contact us</a></li>
 	</ul>
 </nav>

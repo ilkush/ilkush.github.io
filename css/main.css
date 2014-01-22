@@ -30,6 +30,10 @@ nav ul li {
   margin: 15px;
 }
 
+nav ul li.active {
+  font-weight: bold;
+}
+
 /*===index===*/
 .kush-well {
   border:1px dotted #eee;
