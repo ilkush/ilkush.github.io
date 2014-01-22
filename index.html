@@ -1,13 +1,48 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Welcome to kush
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<h3 class="headers">Hi, we are kush</h3>
+<p>
+	<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, iure esse illum itaque quod ab ipsum vel error at optio excepturi eligendi sequi nesciunt ullam quasi enim suscipit odio. Aliquid.</span>
+	<span>Necessitatibus, dolorem, eos architecto blanditiis molestias molestiae vero tenetur repudiandae sed quia nobis quas eveniet nihil veritatis et voluptatibus cumque! Expedita quae natus culpa atque ratione porro maxime cupiditate dolorem.</span>
+	<span>Incidunt, est excepturi necessitatibus nesciunt dicta quo ut quasi dolor. Modi, voluptatibus, reprehenderit hic vel praesentium sit earum accusamus totam saepe maxime assumenda porro tempora neque alias ut aliquam dolorem!</span>
+	<a href="/about">more in about us</a>
+</p>
+
+<h3 class="headers">Services</h3>
+<div class="row">
+	<div class="col-md-6">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quae, animi, minima accusamus aliquid blanditiis asperiores dolore esse atque et consequuntur repellendus voluptas eveniet tempora voluptatum id amet expedita quam?
+		</p>
+	</div>
+	<div class="col-md-6">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, saepe, ipsam, dolorem, cum quam at eum praesentium eius illum assumenda quae itaque maxime impedit voluptates possimus aspernatur quas consequuntur cumque?</p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-6">
+		<h3 class="headers"><span class="glyphicon glyphicon-th"></span> News</h3>
+		<div>
+			{% for post in site.posts %}
+				<a href="{{ post.url }}" class="news">{{ post.title }}</a>
+				<br>
+				<small>{{ post.date | date_to_string }}</small>
+				<p><small>{{ post.excerpt }}</small></p>
+			{% endfor %}
+		</div>
+	</div>
+	<div class="col-md-6">
+		<h3 class="headers"><span class="glyphicon glyphicon-calendar"></span> Events to come</h3>
+		{% for post in site.posts %}
+			<div class="well kush-well">
+				<a href="{{ post.url }}">{{ post.title }}</a>
+				<br>
+				<small>{{ post.date | date_to_string }}</small>
+			</div>
+		{% endfor %}
+	</div>
 </div>
