@@ -1,7 +1,7 @@
 <figure>
 	<img src="/assets/logo.png" alt="kush" class="img-circle">
-	<h1 id="brand">KUSH</h1>
-	<figcaption><a href="/contact">Salman 1C abajo</a></figcaption>
+	<h1 id="brand"><a href="/">KUSH</a></h1>
+	<figcaption><a href="/contact.html">Salman 1C abajo</a></figcaption>
 </figure>
 <nav>
 	<ul>
@@ -10,6 +10,6 @@
 		<li><a href="/bar.html">Bar</a></li>
 		<li><a href="/blog.html">Blog</a></li>
 		<li class="{% if page.title == "about" %} active {% else %} no-active {% endif %}"><a href="/about.html">About us</a></li>
-		<li><a href="/contact.html">Contact us</a></li>
+		<li class="{% if page.title == "contact" %} active {% else %} no-active {% endif %}"><a href="/contact.html">Contact us</a></li>
 	</ul>
 </nav>
