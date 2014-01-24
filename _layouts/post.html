@@ -1,9 +1,19 @@
 ---
 layout: default
 ---
+
 <h2>{{ page.title }}</h2>
 <p class="meta">{{ page.date | date_to_string }}</p>
 
 <div class="post">
 {{ content }}
+</div>
+
+<div class="row">
+	<div class="col-md-6">
+		<a href="/blog.html">Back</a>
+	</div>
+	<div class="col-md-6">
+		<a href="#" class="pull-right">Facebook</a>
+	</div>
 </div>

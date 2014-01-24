@@ -1,0 +1,14 @@
+---
+layout: posts
+title: blog
+---
+
+{% for post in site.posts %}
+	<div class="posts">
+		<a href="{{ post.url }}">{{ post.title }}</a>
+		<span class="label label-info">{{ post.categories }}</span>
+		<br>
+		<small>{{ post.date | date_to_string }}</small>
+		<p>{{ post.excerpt }}</p>
+	</div>
+{% endfor %}

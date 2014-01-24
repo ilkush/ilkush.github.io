@@ -1,0 +1,14 @@
+- name: Tom Preston Werner
+  country: England
+  image: tom.png
+  message: Lorem ipsum dolor sit amet consectetur adipisicing elit
+
+- name: Bobby Warner
+  country: Germany
+  image: bob.png
+  message: Eos architecto blanditiis molestias molestiae vero tenetur repudiandae
+
+- name: Monkey de Luffy
+  country: Germany
+  image: luffy.png
+  message: Est excepturi necessitatibus nesciunt dicta quo ut quasi dolor
