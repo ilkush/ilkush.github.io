@@ -1,8 +1,4 @@
 /*===sidebar===*/
-.sidebar {
-  _position: fixed;
-}
-
 figure {
   text-align: center;
 }
@@ -125,4 +121,10 @@ ol.list {
 
 .info {
   text-align: center;
+}
+
+.thumb {
+  display: inline-block;
+  margin: 2px;
+  padding: 0;
 }
