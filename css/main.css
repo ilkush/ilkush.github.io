@@ -50,10 +50,6 @@ nav ul li.active {
   box-shadow: 0;
 }
 
-.services {
-  width: 35%;
-}
-
 /*===not implemented===*/
 .center-block {
   display: block;
