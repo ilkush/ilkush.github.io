@@ -89,9 +89,6 @@ footer {
 }
 
 /*===bar===*/
-.team {
-  width: 50%;
-}
 
 /*===tours===*/
 ol.list {
@@ -125,6 +122,10 @@ ol.list {
 
 .thumb {
   display: inline-block;
-  margin: 2px;
+  margin: 3px;
   padding: 0;
+}
+
+img {
+  vertical-align: baseline;
 }

@@ -6,6 +6,11 @@ image:
   source: assets/images/_fullsize
   output: generated
   presets:
+    # gallery
+    gallery:
+      attr:
+        class: thumb
+        width: 400
     # Proportional preset
     users:
       attr:
