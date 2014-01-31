@@ -33,11 +33,12 @@ nav ul {
 }
 
 nav ul li {
-  margin: 15px;
+  margin: 5px;
+  padding: 5px;
 }
 
 nav ul li.active {
-  font-weight: bold;
+  border-right:2px solid green;
 }
 
 /*===index===*/
