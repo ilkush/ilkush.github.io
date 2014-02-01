@@ -85,36 +85,43 @@ footer {
   background: #fefefe;
 }
 
-/*===bar===*/
-
 /*===tours===*/
-ol.list {
-  text-align: center;
+ul.prices {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0
 }
 
-.steps {
-  font-size: 1em;
-  background: #444;
-  color: white;
-  border-radius: 100%;
-  display: block;
-  height: 2em;
+ul.prices li {
+  background: #e3e3e3;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
   text-align: center;
-  margin: 0 auto 1em;
-  width: 2em;
-  line-height: 2em;
+  position: relative;
 }
 
-.header {
-  text-align: center;
-  margin: 25px 0;
+ul.prices li:nth-child(2n) {
+  background: #eee;
 }
 
-.info {
-  text-align: center;
+.number {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.testimonies {
+  width: 25%;
 }
 
 .thumb {
