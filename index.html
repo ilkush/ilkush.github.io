@@ -32,8 +32,8 @@ title: home
 	<div class="col-md-4">
 		<a href="/tattoo.html">
 			<figure>
-				<img src="/assets/sk.png" alt="">
-				<figcaption><strong>TATOO</strong></figcaption>
+				<img src="/assets/tattoo.png" alt="">
+				<figcaption><strong>TATTOO</strong></figcaption>
 			</figure>
 		</a>
 	</div>
@@ -58,6 +58,7 @@ title: home
 				<a href="{{ post.url }}">{{ post.title }}</a>
 				<br>
 				<small>{{ post.date | date_to_string }}</small>
+				<p><small>{{ post.excerpt }}</small></p>
 			</div>
 		{% endfor %}
 	</div>
