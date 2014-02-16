@@ -1,47 +1,62 @@
-/*===sidebar===*/
-figure {
-  text-align: center;
-}
-
 .logo {
   width: 50%;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
-#brand {
-  color: #444;
-  margin: 10px auto 5px auto;
-  font-weight: bold;
-  padding-bottom: 0;
-  border-bottom: 3px solid #444;
-  width: 38%;
+.logo:hover {
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg);
 }
 
-figcaption {
-  font-size: 0.8em;
-  margin: 2px 0;
-  padding: 0;
-}
-
-nav {
+.sidebar figure {
   text-align: center;
 }
 
-nav ul {
+.sidebar h1 {
+  margin: 2px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.sidebar h1 span {
+  color: rgb(255,89,0);
+}
+
+.sidebar figcaption {
+  margin: -6px;
+  font-size: .8em;
+}
+
+.sidebar nav {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.sidebar nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-nav ul li {
-  margin: 5px;
-  padding: 5px;
+.sidebar nav ul li {
+  margin: 5px 0;
+  padding: 5px 0;
 }
 
-nav ul li.active {
-  border-right:2px solid green;
+.sidebar nav ul li.active {
+  text-decoration: underline;
 }
 
 /*===index===*/
+figure.services {
+  text-align: center;
+}
+
+figure.services a {
+  margin: 5px 0;
+}
+
 .kush-well {
   background: #FFF;
 }
@@ -99,6 +114,7 @@ ul.prices li {
   float: left;
   border: 1px solid rgb(217,222,225);
   overflow: hidden;
+  -webkit-transition: background-color 0.4s ease;
   transition: background-color 0.4s ease;
 }
 
@@ -122,18 +138,85 @@ ul.prices h5 {
   text-align: center;
 }
 
-.testimonies {
-  width: 25%;
+figure.testimonies {
+  width: 50%;
 }
 
-/*==== ???? ====*/
+.activity {
+  background: #FFF;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: .9em;
+}
+
+.activity h5 {
+  margin: 0 0 5px 0;
+  font-weight: bold;
+}
+
+.menu {
+  background: url("/assets/bar/wood.png");
+  padding: 30px;
+}
+
+.menu-body {
+  background: #FFF;
+  padding: 25px 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+}
+
+.menu h1, .menu h2, .menu h3 {
+  text-align: center;
+}
+
+.menu h1 {
+  font-size: 2.5em;
+}
+
+.menu h2 {
+  margin: -15px 0 10px 0;
+  font-size: 1.3em;
+}
+
+.menu h3 {
+  font-size: 1.2em;
+  margin: 15px 0;
+}
+
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.menu ul li {
+  padding: 10px 0;
+  border-bottom: 1px dotted #eee;
+}
+
+.menu ul li:last-child {
+  border-bottom-style: none;
+}
+
+.menu ul li span {
+  float: right;
+}
+
+.quote img {
+  border: 1px solid #eee;
+  width: 2.9em;
+  display: block;
+  margin: 0 auto;
+}
+
+.quote p:last-child {
+  text-align: center;
+}
 
 .thumb {
   display: inline-block;
   margin: 3px;
   padding: 0;
-}
-
-img {
-  vertical-align: baseline;
 }

@@ -1,0 +1,80 @@
+#PLAN BAJON
+- name: Brochetitas de pollo
+  price: 110
+  tag: Plan bajon
+
+- name: Costillas BBQ
+  price: 130
+  tag: Plan bajon
+
+- name: Alitas BBQ
+  price: 120
+  tag: Plan bajon
+
+- name: Los clasicos dedos de la Maria
+  price: 100
+  tag: Plan bajon
+
+- name: Alitas chiludas
+  price: 110
+  tag: Plan bajon
+
+#PA' MIENTRAS
+- name: Tostones mixtos
+  price: 80
+  tag: Pa' mientras
+
+- name: Tostones con quezo
+  price: 60
+  tag: Pa' mientras
+
+- name: Brutal extrem toston
+  price: 100
+  tag: Pa' mientras
+
+- name: Nachos KUSH
+  price: 70
+  tag: Pa' mientras
+
+- name: Papas strill
+  price: 120
+  tag: Pa' mientras
+
+- name: Papas extremas
+  price: 210
+  tag: Pa' mientras
+
+#PA' PICAR
+- name: Tortillitas fritas con frijoles licuados
+  price: 30
+  tag: Pa' picar
+
+- name: Tacos nicas si
+  price: 50
+  tag: Pa' picar
+
+#VARIADOS
+- name: Extremo
+  price: 210
+  tag: Variados
+
+- name: Strill
+  price: 210
+  tag: Variados
+
+- name: Bajon de Vaho
+  price: 350
+  tag: Variados
+
+#JUEGOS
+- name: Te Alaska frozen
+  price: 20
+  tag: Jugos
+
+- name: Naranja all natural
+  price: 20
+  tag: Jugos
+
+- name: Limonada all natural
+  price: 20
+  tag: Jugos
