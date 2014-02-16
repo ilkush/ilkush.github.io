@@ -3,5 +3,85 @@ layout: default
 title: bar
 ---
 
-<h3 class="headers">House</h3>
+<h3>Bar</h3>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, iure esse illum itaque quod ab ipsum vel error at optio excepturi eligendi sequi nesciunt ullam quasi enim suscipit odio. Aliquid.</p>
+
+<ul>
+	<li>sas</li>
+	<li>asd</li>
+</ul>
+
+<div class="row">
+	<div class="col-md-9">
+		<div class="menu">
+			<div class="menu-body">
+				<h1>KUSH</h1>
+				<h2>menu</h2>
+				<h3>Plan bajon</h3>
+				<ul>
+					{% for item in site.data.items %}
+						{% if (item.tag == "Plan bajon") %}
+							<li>{{ item.name }}<span>{{ item.price }}</span></li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+				<h3>Pa' mientras</h3>
+				<ul>
+					{% for item in site.data.items %}
+						{% if (item.tag == "Pa' mientras") %}
+							<li>{{ item.name }}<span>{{ item.price }}</span></li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+				<h3>Pa' picar</h3>
+				<ul>
+					{% for item in site.data.items %}
+						{% if (item.tag == "Pa' picar") %}
+							<li>{{ item.name }}<span>{{ item.price }}</span></li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+				<h3>Variados</h3>
+				<ul>
+					{% for item in site.data.items %}
+						{% if (item.tag == "Variados") %}
+							<li>{{ item.name }}<span>{{ item.price }}</span></li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+				<h3>Jugos</h3>
+				<ul>
+					{% for item in site.data.items %}
+						{% if (item.tag == "Jugos") %}
+							<li>{{ item.name }}<span>{{ item.price }}</span></li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+				<h3>Los tapis</h3>
+				<ul>
+					{% for item in site.data.drinks %}
+							<li>{{ item.name }}<span>{{ item.price }}</span></li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3">
+		<h4><span class="glyphicon glyphicon-calendar"></span> Agenda</h4>
+		<div class="activity">
+			<h5>Martes de salsa</h5>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, error, repellendus voluptates reprehenderit iure in rerum voluptatibus laudantium.</p>
+		</div>
+		<hr>
+		<div class="activity">
+			<h5>Jueves de regue</h5>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		</div>
+		<h4><span class="glyphicon glyphicon-comment"></span> Frase del dia</h4>
+		<div class="quote">
+			<p>{{ site.data.quotes | last }}</p>
+			<img src="assets/bar/kucho.jpg" alt="" class="img-circle">
+			<p>{{ site.data.quotes | last }}</p>
+		</div>
+	</div>
+</div>
