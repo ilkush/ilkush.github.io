@@ -65,16 +65,15 @@ title: tours
 	</div>
 </div>
 
-
 <h3 style="text-align:center;">Testimonies</h3>
 <div class="row">
-	{% for testimony in site.data.testimonies %}
+	{% for testimony in site.data.testimonies limit : 3 %}
 		<div class="col-md-4">
-			<figure>
-				<img src="/assets/testimonies/{{ testimony.image }}" alt="{{ testimony.name }}" class="img img-circle testimonies">
-				<figcaption><strong>{{ testimony.name }}</strong> from {{ testimony.country }}</figcaption>
+			<figure class="testimonies">
+				<img src="/assets/testimonies/{{ testimony.image }}" alt="{{ testimony.name }}" class="img img-circle">
+				<figcaption><strong>{{ testimony.name | capitalize }}</strong> from {{ testimony.country | capitalize}}</figcaption>
+				<p>"{{ testimony.message }}"</p>
 			</figure>
-			<p class="centered">"{{ testimony.message }}"</p>
 		</div>
 	{% endfor %}
 </div>

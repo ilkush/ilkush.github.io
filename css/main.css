@@ -66,13 +66,6 @@ figure.services a {
   padding-top: 15px;
 }
 
-/*===not implemented===*/
-.center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /*===common===*/
 .content {
   padding-top: 45px;
@@ -107,19 +100,12 @@ ul.prices {
 }
 
 ul.prices li {
-  min-width: 20%;
-  min-height: 100px;
+  width: 25%;
 
-  margin: 0 15px;
+  margin: 5px 0;
   float: left;
-  border: 1px solid rgb(217,222,225);
+  color: #444;
   overflow: hidden;
-  -webkit-transition: background-color 0.4s ease;
-  transition: background-color 0.4s ease;
-}
-
-ul.prices li:hover {
-  background: #fdfcf6;
 }
 
 ul.prices li:first-child {
@@ -139,12 +125,16 @@ ul.prices h5 {
 }
 
 figure.testimonies {
-  width: 50%;
+  text-align: center;
+}
+
+figure.testimonies img {
+  width: 25%;
 }
 
 .activity {
   background: #FFF;
-  padding: 10px;
+  padding: 2px 10px;
   margin: 10px 0;
   font-size: .9em;
 }
@@ -153,19 +143,31 @@ figure.testimonies {
   margin: 0 0 5px 0;
   font-weight: bold;
   background: #FFF;
-  border-top: 1px solid #DDD;
-  border-left: 1px solid #DDD;
+}
+
+.quote {
+  padding: 10px;
+}
+
+.quote p {
+  font-size: .9em;
+}
+
+.quote img {
+  width: 2.9em;
+  display: block;
+  margin: 0 auto;
+}
+
+.quote p:last-child {
+  text-align: center;
 }
 
 .menu {
-  background: url("/assets/bar/wood.png");
-  padding: 30px;
-}
-
-.menu-body {
-  background: #FFF;
-  padding: 25px 0;
-  box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+  background: #5BA5EE;
+  color: #FFF;
+  margin: 0;
+  padding: 10px 0 0 0;
 }
 
 .menu h1, .menu h2, .menu h3 {
@@ -184,6 +186,7 @@ figure.testimonies {
 .menu h3 {
   font-size: 1.2em;
   margin: 15px 0;
+  text-transform: uppercase;
 }
 
 
@@ -207,15 +210,9 @@ figure.testimonies {
   float: right;
 }
 
-.quote img {
-  border: 1px solid #eee;
-  width: 2.9em;
-  display: block;
-  margin: 0 auto;
-}
-
-.quote p:last-child {
-  text-align: center;
+.menu .drinks {
+  background: #E2573E;
+  padding: 5px 0 0 0;
 }
 
 .thumb {
